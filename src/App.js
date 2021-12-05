@@ -1,4 +1,5 @@
 import React from "react";
+import Searchbar from "./components/Searchbar";
 
 function App() {
   return (
@@ -6,6 +7,9 @@ function App() {
       <header>
         <h1>Movie Finder</h1>
       </header>
+      <main>
+        <Searchbar />
+      </main>
     </div>
   );
 }
