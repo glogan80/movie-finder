@@ -10,10 +10,10 @@ function App() {
     results: [],
     selected: {}
   });
-  const apiurl = "http://www.omdbapi.com/?i=tt3896198&apikey=fd2d0407";
+  const apiurl = "http://www.omdbapi.com/?apikey=fd2d0407";
 
   const search = (e) => {
-    if (e.key === "Enter")
+    if (e.key === "Enter") {
       axios(apiurl + "&s=" + state.s).then(({ data }) => {
         let results = data.Search;
 
@@ -21,13 +21,14 @@ function App() {
           return { ...prevState, results: results }
         })
       });
+    }
   }
 
   const handleInput = (e) => {
     let s = e.target.value;
 
     setState(prevState => {
-      return {...prevState, s: s }
+      return { ...prevState, s: s }
     });
   }
 
