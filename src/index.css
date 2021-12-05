@@ -20,3 +20,31 @@ header h1 {
   font-weight: 485;
   text-align: center
 }
+
+main {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 15px;
+}
+
+.searchbar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: none;
+  border: none;
+  border-radius: 9px;
+  outline: none;
+  background-color: #e8eded;
+  color: #535454;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.searchbar:focus {
+  box-shadow: 0px 0px 8px 3px #0fbdbd;
+}
