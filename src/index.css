@@ -33,10 +33,10 @@ section {
   padding: 15px;
 }
 
-h2 {
+/* h2 {
   color: whitesmoke;
   padding: 10px 15px 0px;
-}
+} */
 
 .searchbar {
   display: block;
@@ -122,6 +122,7 @@ h2 {
 
 .popup .content .rating {
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .popup .content .plot {
