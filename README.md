@@ -6,8 +6,9 @@ In this project I explored React to create a movie database search site.
 # Technologies used
 - HTML
 - CSS
-- JavaScript
-- REACT
+- React JS
+- Git
+- Heroku (for deployment)
 
 ## Livesite link
 
