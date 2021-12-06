@@ -12,11 +12,13 @@ function App() {
   });
   const apiurl = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_KEY}`;
 
+//Searching the API using Axios https://axios-http.com/docs/intro
   const search = (e) => {
     if (e.key === "Enter") {
       axios(apiurl + "&s=" + state.s).then(({ data }) => {
         let results = data.Search;
-
+//We can use setState() to change the state of the component directly as well as through an arrow function.
+//https://www.geeksforgeeks.org/reactjs-setstate/ and https://www.rockyourcode.com/react-set-state-with-prev-state-and-object-spread-operator/
         setState(prevState => {
           return { ...prevState, results: results }
         })
@@ -26,7 +28,6 @@ function App() {
 
   const handleInput = (e) => {
     let s = e.target.value;
-
     setState(prevState => {
       return { ...prevState, s: s }
     });
@@ -51,7 +52,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Movie Finder</h1>
+        <h1>myMovie Finder</h1>
       </header>
       <main>
         <Searchbar handleInput={handleInput} search={search} />

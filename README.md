@@ -1,19 +1,20 @@
 ![img](images/gameplay.gif)
 
-# Adventure Time Memory Game
-In this project I explored DOM Manipulation and animation functionality to create a [Memory Flash Card game](https://en.wikipedia.org/wiki/Concentration_(card_game)) using the popular cartoon [Adventure Time](https://en.wikipedia.org/wiki/Adventure_Time) as a theme.
+# myMovie Finder
+In this project I explored React to create a movie database search site.
 
 # Technologies used
 - HTML
 - CSS
 - JavaScript
+- REACT
 
 ## Livesite link
 
-[Adventure Time Memory Game Live Site](https://pages.git.generalassemb.ly/kinglogan/FlashCards/)
+[myMovie Finder](https://mymovie-finder.herokuapp.com/)
 
-Use the mouse to select two cards. If the cards match, they stay turned over. If the cards do not match, they are flipped back over. The player has 8 attempts to find all of the matches. When all matches have been found the player wins the game.
+Type a movie name in the searchbar. All matching movies appear. Click on a movie for more information on the specific movie.
 
 ### Future additions
-- Add a timer
-- Automatic game reset upon win/loss
+- Add to favorites
+- Search while typing feature
