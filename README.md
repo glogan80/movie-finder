@@ -1,4 +1,4 @@
-![img](images/gameplay.gif)
+![img](images/mymovie-finder.gif)
 
 # myMovie Finder
 In this project I explored React to create a movie database search site.
